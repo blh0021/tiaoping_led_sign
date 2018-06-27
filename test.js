@@ -1,4 +1,8 @@
-const devPort = 'COM3'
+const b = require('./builder.js')
+
+const devPort = '/dev/tty.usbserial-FTE1DWSK'
+const txt = 'This is fun'
+
 
 const SerialPort = require('serialport');
 const port = new SerialPort(devPort, {
@@ -9,10 +13,11 @@ const port = new SerialPort(devPort, {
 
 port.open(function (err) {
   if (err) {
-    console.log('Error opening port: ', err.message);
+    console.log('Error opening port: ', err.message)
     return
   }
-  port.drain();
-  let data = `~128~f01AWhat a Bunch of crap\r\r\r`;
+  port.drain()
+  let data = `${b.start}${b.setTransition('cyclic')}${txt}${b.end}`
+  console.log(data);
   port.write(data)
 });
