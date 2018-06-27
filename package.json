@@ -1,0 +1,11 @@
+{
+  "name": "tiaoping_led_sign",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/blh0021/tiaoping_led_sign.git",
+  "author": "Benjamin Harrington <ben@harringtonweb.com>",
+  "license": "MIT",
+  "dependencies": {
+    "serialport": "^6.2.0"
+  }
+}
