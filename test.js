@@ -1,7 +1,8 @@
 const b = require('./builder.js')
+const config = require('./config.json')
 
-const devPort = '/dev/tty.usbserial-FTE1DWSK'
-const txt = 'This is fun'
+const devPort = config.port
+const txt = process.argv[2] || 'This is fun'
 
 
 const SerialPort = require('serialport');
