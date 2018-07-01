@@ -9,7 +9,6 @@ const SerialPort = require('serialport');
 const port = new SerialPort(devPort, {
   autoOpen: false,
   baudRate: 9600
-
 });
 
 port.open(function (err) {
@@ -18,7 +17,7 @@ port.open(function (err) {
     return
   }
   port.drain()
-  let data = `${b.start}${b.setTransition('cyclic')}${txt}${b.end}`
+  let data = `${b.start}${b.setTransition('pac man')}${b.setFont("5x6", txt)}${b.end}`
   console.log(data);
   port.write(data)
 });

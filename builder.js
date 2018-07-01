@@ -22,12 +22,12 @@ module.exports = {
     setSpeed: function(s) {
         if (s < 0 || s > 9)
             throw("Speed Error between 1 and 8")
-        return `\Y${s}`
+        return `\\Y${s}`
     },
     
     setPause: function(s) {
         if (s < 0 || s > 9)
             throw("Pause Error between 1 and 8")
-        return `\Z${s}`
+        return `\\Z${s}`
     }
 }
