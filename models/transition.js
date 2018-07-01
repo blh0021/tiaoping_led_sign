@@ -1,4 +1,26 @@
 module.exports = {
     "cyclic": "~f01A",
-    "immediate": "~f01A"
+    "immediate": "~f01B",
+    "open from right": "~f01C",
+    "open from left": "~f01D",
+    "open From center": "~f01E",
+    "open To center": "~f01F",
+    "cover from center": "~f01G",
+    "cover from right": "~f01H",
+    "cover from left": "~f01I",
+    "cover to center": "~f01J",
+    "scroll up": "~f01K",
+    "scrool down": "~f01L",
+    "interlace to center": "~f01M",
+    "interlace cover": "~f01N",
+    "cover up": "~f01O",
+    "cover down": "~f01P",
+    "scan line": "~f01Q",
+    "explode": "~f01R",
+    "pac man": "~f01S",
+    "fall & stack": "~f01T",
+    "shoot": "~f01U",
+    "flash": "~f01V",
+    "random": "~f01W",
+    "slide in": "~f01X"
 }
